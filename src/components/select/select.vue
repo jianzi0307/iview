@@ -658,9 +658,7 @@
         watch: {
             value(value){
                 const {getInitialValue, getOptionData, publicValue, values} = this;
-
                 this.checkUpdateStatus();
-
                 if (value === '') this.values = [];
                 else if (checkValuesNotEqual(value,publicValue,values)) {
                     this.$nextTick(() => this.values = getInitialValue().map(getOptionData).filter(Boolean));
