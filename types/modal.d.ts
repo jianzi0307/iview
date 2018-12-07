@@ -172,7 +172,7 @@ export declare interface ModalConfig {
   /**
    * 自定义内容，使用后不再限制类型， content 也无效。
    */
-  render?: (h?) => void;
+  render?: (h?:any) => void;
   /**
    * 宽度，单位 px
    * @default 416
